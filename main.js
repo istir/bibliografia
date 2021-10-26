@@ -7,7 +7,7 @@ function main() {
     const split = originalText.split("\n")
     let split1=[]
     for (let i = 0; i < split.length; i+=1) {
-        const element = split[i].replace(/(\[[0-9]+\]|[0-9]+\.*)\s*/,"")
+        const element = split[i].replace(/(\[[0-9]+\])\s*/,"")
         if(element.length>0) split1.push(element)
     }
    
